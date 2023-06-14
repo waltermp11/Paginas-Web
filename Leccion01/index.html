@@ -34,23 +34,41 @@
         <img src="img/wallpaper-for-form.jpg" alt="" class="form-image" />
       </div>
       <div class="box">
-        <form action="" class="form-box">
+        <form action="" class="form-box" id="formulario1">
           <h1>Formulario</h1>
-          <label for="">nombre </label>
-          <input type="text" />
-          <label for="">Apellido</label>
-          <input type="text" />
-          <label for="">Direccion</label>
-          <input type="text" />
-        </form>
+          <div class="fromGroup">
+            <label for="nombre">Nombre </label>
+            <input type="text" id="nombre" />
+          </div>
+          <div class="fromGroup">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" />
+          </div>
 
-        <form action="">
-          <label for="">nombre </label>
-          <input type="text" />
-          <label for="">Apellido</label>
-          <input type="text" />
-          <label for="">Direccion</label>
-          <input type="text" />
+          <div class="fromGroup">
+            <label for="direccion">Direccion</label>
+            <input type="text" id="direccion" />
+          </div>
+          <div class="fromGroup">
+            <label for="hobbies">Escoja sus Hobbies</label>
+            <div>
+              <input type="checkbox" name="hobbie" id="Caminar">
+              <label for="hobbie">Caminar </label>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <label for="">Aceptas termino o condiciones?</label>
+          <div class="as">
+            <input type="radio" name="condicion" id="Si" />
+            <label for="opcionSi">Si</label>
+            <input type="radio" name="condicion" id="No" />
+            <label for="opcionNo">No</label>
+          </div>
+
+          <input type="submit" class="button-submit" />
         </form>
       </div>
     </section>

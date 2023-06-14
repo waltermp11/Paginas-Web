@@ -1,70 +1,48 @@
-//alert ("This is an alert!");
+//CODIGO DE PAGINA
+//objeto donde voy a cargar mis datos
+function capturarDatosFormulario() {
+  let usuario = {
+    nombre: "",
+    apellido: "",
+    direccion: "",
+    condicion: "",
+  };
+  //capturamos los elementos primero
+  const nombre = document.getElementById("nombre");
+  console.log(nombre);
+  const apellido = document.getElementById("apellido");
+  console.log(apellido);
+  const direccion = document.getElementById("direccion");
+  console.log(direccion);
+  const terminosYCondiciones = document.querySelectorAll("[name=condicion]");
 
-//confirm ("do yo want continue with the procedure");
 
-/*let fullName=prompt ("Hello, please type your name to continue with the inscription in the GYM");
-
-console.log(fullName);*/
-
-//Example how to do a simple validation with Js
-
-/*.let firstConfirmation = confirm("Do you agree with the paperwork?");
-
-
-if (firstConfirmation ) {
-
-  let name = prompt("Hello, please sign you full name: ");
-  
-  if (name==null) {
-    alert("Pls write type your name.")
+//cargar los datos
+usuario.nombre = nombre.value;
+usuario.apellido = apellido.value;
+usuario.direccion = direccion.value;
+terminosYCondiciones.forEach((decision)=>{
+  if(decision.checked){
+    usuario.condicion=decision.id;
   }
-  else{
-    alert("Hello, " + name + " How are you?");
-  }
-} else {
-  alert("We can't continue with the procedure :c");
-}*/
+});
 
-/*let personaje = {
-  nombre: "Walter",
-  apellido: "Montoya",
-  edad: 22
-};
+return usuario;
+}
+// Evento submit
+let formulario1 = document.getElementById("formulario1");
+formulario1.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-for (const caracteristica in personaje) {
-console.log(caracteristica,personaje[caracteristica]);
-        
-    }
-
-
-    let series = ["The Greys Anatomy",  "Kimetsu","Marvel"];
-
-    for (const serie of series) {
-        console.log(serie);
-    }*/
-
-    /*for (let i = 0; i < series.length; i++) {
-        let positionOfMarvel =  series.indexOf('Marvel');
-        console.log("La posicion de la pelicula Marvel es :"+ positionOfMarvel);
-        
-    }*/
-//let elh1 = document.querySelector("h1");
-// console.log(elh1);
-
-// let ul = document.querySelector(".lista1"); // asi es por clase
-// console.log(ul);
-
-// let losParrafos = document.querySelectorAll("p");
-
-
-//Ejemplode For Each
-
-const arrayPrueba =["1","22","5"];
-
-arrayPrueba.forEach(function  (element,index) {
-  console.log(index);
-  console.log(element);
-
+  const datos = capturarDatosFormulario();
+  console.log(datos);
   
-})
+  console.log(validarformulario());
+});
 
+//funciones.
+function validarformulario() {
+  setTimeout(() => {
+    formulario1.reset();
+  }, "5000");
+}
