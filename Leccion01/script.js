@@ -16,6 +16,12 @@ function capturarDatosFormulario() {
   console.log(direccion);
   const terminosYCondiciones = document.querySelectorAll("[name=condicion]");
 
+  /*Probando codigo para normalizacion de datos*/
+
+  const peliculas = document.querySelector('#prueba').value;
+  console.log(peliculas);
+  const peliculasnormalizadas = peliculas.split(';')
+  console.log(peliculasnormalizadas);
 
 //cargar los datos
 usuario.nombre = nombre.value;
@@ -29,7 +35,7 @@ terminosYCondiciones.forEach((decision)=>{
 
 return usuario;
 }
-// Evento submit
+/*------------------------EVENTO SUBMIT----------------------*/
 let formulario1 = document.getElementById("formulario1");
 formulario1.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -46,3 +52,4 @@ function validarformulario() {
     formulario1.reset();
   }, "5000");
 }
+
