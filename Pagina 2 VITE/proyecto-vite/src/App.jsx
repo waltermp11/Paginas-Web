@@ -1,8 +1,4 @@
 
-import Titulo from './Components/Titulo';
-import Article from './Components/Article';
-/* import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg"; */
 import "./App.css";
 
 function App() {
@@ -11,12 +7,8 @@ function App() {
   return (
     
     <>
-      <Titulo/>
-      <Article
-        mensaje ="Soy un mensaje que pasa por props"
-      />
-      <h2>Agregando Componentes 🥁👊🏻</h2>
-      <h3>{nombre}</h3>
+    <h1>Bienvenido a la clase 3!</h1>
+    
       </>
   );
 }
