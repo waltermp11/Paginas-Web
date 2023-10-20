@@ -4,7 +4,7 @@ import Subtitulo from "./Subtitulo";
 const Titulo = () => {
   return (
     <>
-      <h1>Bienvenido a la Clase III</h1>
+      <h1 className="tituloPrincipal">Bienvenido a la Clase III</h1>
       <Subtitulo 
         info1="Clase de props 💻" />
       <Subtitulo 
