@@ -6,23 +6,18 @@ const Formulacio = () => {
   const [nombre, setNombre] = useState("");
   const [categoria, setCategoria] = useState("");
   const [fecha, setFecha] = useState(0);
-  const newAge = nombre-10;
+  
 
   const handlesubmit = (e) => {
     e.preventDefault(); //Prevenimos el evento
     //la ideda es manejar las validaciones aca
-
-    if ([nombre,categoria].includes('') || fecha ===0) {
-        alert('Los datos son vacios ❌❌')
-        
-    }
-    else{
-        
-        alert('Los datos fueron enviados correctamente y su nueva edad es : '+newAge);
-    }
-
-
-
+      if ( [nombre,categoria].includes('') || fecha == 0 ||nombre.length>10  ) {
+        alert("Los datos son vacios ");
+      } else {
+        alert(
+          "Los datos son correctos! ✅ "
+        );
+      }
 
     console.log("Okay");
   };
@@ -33,9 +28,9 @@ const Formulacio = () => {
         <h1>Formulario de Practica</h1>
         <label htmlFor="">Nombre : </label>
         <input
-          type="number"
+          type="text"
           placeholder="Ingresar nombre"
-          value={nombre}
+          value={nombre} // En la propiedad value, ponemos la variable para el desarrollo
           onChange={(e) => setNombre(e.target.value)}
         />
 
