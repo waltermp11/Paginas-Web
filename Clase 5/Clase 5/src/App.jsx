@@ -3,6 +3,9 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import ProductoClass from "./Components/ProductoClass";
 import ClicksContador from "./Components/ClicksContador";
+import Title from "./Components/Title";
+import Likes from "./Components/Likes";
+import ListaPokemons from "./Components/ListaPokemons";
 import "./App.css";
 
 function App() {
@@ -37,6 +40,14 @@ function App() {
         value={producto}
         onChange={(e) => setProducto(e.target.value)} //Aca estamos cogiendo el valor que le vamos a dar nuestro input!
       />
+      <br /><br /><br /><br /><br /><br /><br />
+      <hr />
+      <Title/>
+      <Likes/>
+
+      <br /><br /><br /><br />
+      <h1>Lista de Pokemons</h1>
+      <ListaPokemons/>
     </>
   );
 }
