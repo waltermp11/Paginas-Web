@@ -29,7 +29,7 @@ const Fetch = () => {
             <li>
                 {object.name}
             </li>
-          ))} 
+          ))}  {/*/No se porque me tira error aca*/}
         </ul>
 
     
