@@ -8,6 +8,7 @@ import Formulario from "./Components/Formulario";
 import Consigna2 from "./Components/Consigna2";
 import TitleUseEffect from "./Components/TitleUseEffect";
 import SetIntervalUseEffect from "./Components/SetIntervalUseEffect";
+import RegistrarMensajes from "./Components/RegistrarMensajes";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,8 @@ function App() {
       <Consigna2 />
 
       <SetIntervalUseEffect/>
+
+      <RegistrarMensajes/>
     </>
   );
 }

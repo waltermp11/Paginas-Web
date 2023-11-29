@@ -53,7 +53,7 @@ const Consigna2 = () => {
   const handlerRejuvenecer = (e) => {
     e.preventDefault();
 
-    if (validarEdad(parseInt(edad)) == true && validarNombreCompleto(nombreCompleto) == true) {
+    if (validarNombreCompleto(nombreCompleto) == true &&validarEdad(parseInt(edad)) == true ) {
         alert ("Su nueva edad es: " + parseInt(edad-10));
     
         console.log(edad-10);
