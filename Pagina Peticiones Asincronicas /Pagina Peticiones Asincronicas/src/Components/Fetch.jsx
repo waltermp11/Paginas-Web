@@ -27,9 +27,9 @@ const Fetch = () => {
         <ul>
           {vector.map(object => (
             <li>
-              {object.name}
+                {object.name}
             </li>
-          ))}
+          ))} 
         </ul>
 
     
