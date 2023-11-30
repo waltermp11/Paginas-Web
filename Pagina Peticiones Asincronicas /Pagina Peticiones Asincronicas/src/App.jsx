@@ -9,9 +9,7 @@ import AxiosPokemon from "./Components/AxiosPokemon";
 function App() {
   return (
     <>
-      <Fetch />
-
-      <Axios />
+     
 
       <hr />
 
