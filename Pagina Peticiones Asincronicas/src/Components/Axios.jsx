@@ -21,7 +21,7 @@ const Axios = () => {
   };
 
   //Vamos a hacer otro handler, pero con el metodo de HTTP que se llama POST
-  const handlerPost = async () => {
+  const handlerPost = async () => { // hicimos un post en la API de JSON
     try {
       const url = "https://jsonplaceholder.typicode.com/posts";
       const send = {
