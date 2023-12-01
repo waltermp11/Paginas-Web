@@ -14,4 +14,4 @@ const Boton = ({texto,count,incrementar}) => {
   )
 }
 
-export default Boton
+export default Boton;

@@ -10,23 +10,23 @@ const Contador = () => {
 
   //callbacks implementados en nuestro programa
   const incrementar1 = useCallback(() => {
-    () => {
+    
       setContador1(contador1 + 1);
-    };
+    
   }, [contador1]); //Lo que quiero que memorices es lo que esta en los []
   const incrementar2 = useCallback(() => {
-    () => {
-      setContador2(contador2 + 1);
-    };
+    
+      setContador2(contador2 + 2);
+    
   }, [contador2]);
 
   const incrementar3 = useCallback(() => {
-    () => {
-      setContador3(contador3 + 1);
-    };
+  
+      setContador3(contador3 + 3);
+    
   }, [contador3]);
 
-  /**********************RETURN************************* */
+  /**********************return************************* */
   //terminar la actividad dada por el docente!
   return (
     <>
@@ -45,4 +45,4 @@ const Contador = () => {
   );
 };
 
-export default React.memo(Contador);
+export default Contador;

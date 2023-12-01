@@ -8,14 +8,7 @@ import Contador from "./Components/Contador";
 function App() {
   return (
     <>
-      <Axios />
-      <hr />
-      <Boton />
-      <hr />
-      <Fetch />
-      <hr />
-
-      <AxiosPokemon />
+      
 
       <Contador/>
     </>
