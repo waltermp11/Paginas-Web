@@ -13,12 +13,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>  {/*la agregamos nosotros*/}
 
     <Routes>
-      <Route path='/app' element={<App/>}/>
-      <Route path='/inicio-sesion' element={<InicioSesion/>}/>
-      <Route path='/bienvenid@' element ={<Bienvenida/>}/>
-      <Route path='/productos' elements ={<Productos/>}/>
-      <Route path='*' elements = {<NotFount/>}/>  {/**Aca estaria redireccionando a nuestra pagina de que tire error! ⛔  * seria porque como no encontro mas rutas, que muestre esa para*/}
-      
+      <Route path='/' element={<App/>}/>;
+      <Route path='/inicio-sesion' element={<InicioSesion/>}/>;
+      <Route path='/bienvenid@' element ={<Bienvenida/>}/>;
+      <Route path='/producto/:id?' element ={<Productos/>}/>;
+      <Route path='*' element= {<NotFount/>}/>;
 
     </Routes>
       

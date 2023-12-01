@@ -1,6 +1,8 @@
-import {Outlet} from 'react-router-dom'
-import './App.css';                                 
+
+import './App.css';        
+                       
 import Footer from './Components/Footer'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
@@ -8,8 +10,8 @@ function App() {
     <>
 
     <h1>Aca va el inicio de la App estatico</h1>
-    <Outlet/>
-    <Footer/>
+    <Outlet />
+    <Footer />
       
     </>
   )
