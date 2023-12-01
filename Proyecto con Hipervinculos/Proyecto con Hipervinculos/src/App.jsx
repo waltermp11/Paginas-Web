@@ -1,11 +1,15 @@
-
-import './App.css'
+import {Outlet} from 'react-router-dom'
+import './App.css';                                 
+import Footer from './Components/Footer'
 
 function App() {
 
   return (
     <>
-    <h1>Practicanto Enrutamiento! 💻</h1>
+
+    <h1>Aca va el inicio de la App estatico</h1>
+    <Outlet/>
+    <Footer/>
       
     </>
   )
