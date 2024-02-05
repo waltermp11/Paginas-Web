@@ -1,13 +1,12 @@
 import React from 'react'
-import Principal from './Componentes/Principal.jsx'
 import ReactDOM from 'react-dom/client'
-
-import Titulo from './Componentes/Titulo.jsx'
+import App from './App.jsx'
+import Formulario from './Componentes/Formulario.jsx'
+import Principal from "./Componentes/Principal.jsx"
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Titulo/>
     <Principal/>
   </React.StrictMode>,
 )
