@@ -32,7 +32,7 @@ function Formulario({onAgregarPaciente,pacientes}) {
       <form onSubmit={handlerSubmit}>
 
         <label>Nombre </label>
-        <input placeholder="Ingresar Nombre de Padiente " onChange={(e)=>{setNombre(e.target.value)}} value={nombre}/>
+        <input placeholder="Ingresar Nombre de Paciente " onChange={(e)=>{setNombre(e.target.value)}} value={nombre}/>
         <label>Apellido</label>
         <input placeholder="Ingresar Apellido del Paciente" onChange={valueApellido}value={apellido}/>
 
