@@ -1,0 +1,21 @@
+.formulario_principal {
+
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.formulario {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: blue;
+    flex-direction : column;
+    border-color: black;
+   
+    text-align: center;
+    width:50rem;
+   
+}
+
