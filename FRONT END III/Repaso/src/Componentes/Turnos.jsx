@@ -1,13 +1,18 @@
-function Turnos({ pacientes }) {
+import React from 'react'
+
+const Turnos = ({pacientes}) => {
+
+    function mostrarTurnos() {
+        console.log(pacientes);
+    }
   return (
     <div>
-      <h2>Turnos</h2>
-      <ul>
-        {pacientes.map((paciente, index) => (
-          <li key={index}>{paciente.nombre}</li>
+        <h1>Turnos</h1>
+        {pacientes.map((paciente,index)=> (
+            <div key={index}> <p> {paciente.nombre}</p></div>
         ))}
-      </ul>
     </div>
-  );
+  )
 }
+
 export default Turnos;
