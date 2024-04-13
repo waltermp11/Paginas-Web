@@ -21,7 +21,7 @@ const Formulario = () => {
 
   const validateUsername = (userName) => {
     const userNameWithOutSpaces = userName.trim(); // validacion para quitar los espacio
-    const state = true;
+    let state = true;
     if (
       userNameWithOutSpaces.length < 5 ||
       !isNaN(userNameWithOutSpaces) ||
@@ -39,7 +39,7 @@ const Formulario = () => {
 
   const validatePassword = (password) => {
     const passwordWithOutsSpaces = password.trim(); // Validacion paraq uitar los espacios
-    const state2 = true;
+    let state2 = true;
     const caracteres = /[!@#\$%\^&\*\(\)]/; //Expresion regular, de caracteres
 
     //passwordWithOutsSpaces.replace(/[^0-9]/g, "".length) == 0 ||

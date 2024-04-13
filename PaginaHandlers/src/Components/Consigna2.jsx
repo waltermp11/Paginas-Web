@@ -19,7 +19,7 @@ const Consigna2 = () => {
   //Validaciones
   //validar nombre completo
   const validarNombreCompleto = (nombre) => {
-    const state = true;
+    let state = true;
     if (
       nombre.length < 10 ||
       !isNaN(nombre) ||
@@ -36,10 +36,10 @@ const Consigna2 = () => {
   //validar edad
 
   const validarEdad = (edad) => {
-    const state = true;
+    let state = true;
     const soloLetras = /^[A-Z]+$/i;
     if (parseInt(edad) < 25 || soloLetras.test(edad) == true) {
-      alert("La edad no es valida, tiene que ser mayor a 25 año, tu edad es de "+ parseInt(edad-10));
+      alert("La edad no es valida, tiene que ser mayor a 25 año, tu edad es de " + edad);
       state = false;
       return state;
     }
