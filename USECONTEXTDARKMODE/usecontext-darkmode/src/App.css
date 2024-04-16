@@ -18,10 +18,6 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-#Dark {
-  background-color: #282c34;
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -41,3 +37,16 @@
   padding: 2em;
 }
 
+.read-the-docs {
+  color: #888;
+}
+
+#dark {
+  background-color: #282c34;
+  color: white;
+}
+
+#light {
+  background-color: white;
+  color: #282c34;
+}

@@ -1,8 +1,19 @@
+*{
+
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color:var(--letter-color);
+}
+
+
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  color:var(--letter-color);
+  background-color: var(--background-color) ;
+
+  
 }
 
 .logo {
@@ -16,10 +27,6 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-#Dark {
-  background-color: #282c34;
 }
 
 @keyframes logo-spin {
@@ -40,4 +47,19 @@
 .card {
   padding: 2em;
 }
+
+.read-the-docs {
+  color: #888;
+}
+
+#dark {
+  --background-color: #282c34;
+  --letter-color: white;
+}
+
+#light {
+  --background-color: white;
+  --letter-color: #282c34;
+}
+
 

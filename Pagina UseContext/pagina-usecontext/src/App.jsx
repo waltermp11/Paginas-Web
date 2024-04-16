@@ -3,7 +3,7 @@ import NavBar from "./Components/NavBar";
 import Body from "./Components/Body";
 import Layout from "./Components/Layout";
 import { useState } from "react";
-import "App.css"
+
 
 function App() {
   const [theme, setTheme] = useState(themes.light); //exporto el default
