@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Layout from "./Components/Layout";
 import Contact from "./Components/Contact";
 import { useState } from "react";
+import NavBar from "./Components/NavBar";
 
 function App() {
   const [theme, setTheme] = useState(themes.light);
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <ThemeContext.Provider value={{ theme, handlerChangeTheme }}>
           <Layout>
+            <NavBar/>
             <Home />
             <Blogs />
             <Contact/>
