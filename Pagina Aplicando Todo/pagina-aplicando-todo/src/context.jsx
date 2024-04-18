@@ -15,6 +15,6 @@ export const themes = {
 };
 
 //creamos el contexto
-const ThemeContext = createContext(themes.light); //exige como parametro que le pasemos un estado inicial
+const ThemeContext = createContext(themes.light); //exige como parametro que le pasemos un estado inicial 1️⃣
 //Todos los componentes que esten en el ThemeContext, van hacer los que puedan acceder a la nube. ✅✅
-export default ThemeContext;
+export default ThemeContext
