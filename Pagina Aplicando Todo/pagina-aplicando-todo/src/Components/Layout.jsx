@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import { useContext } from "react";
+import ThemeContext from "../context";
 
-const Layout = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+//Layout en este caso seria el Padre de NavBar y del otor componente Body ✅
+//Nosotros aca importamos el useContext, para poder usar el ThemeContext
+const Layout = ({ children }) => {
 
-export default Layout
+  const {theme} = useContext(ThemeContext); //Extraemos theme
+  return <div style={{backgroundColor:theme.backgroundColor, color:theme.color,}}>{children}
+  <butto></butto>
+  </div>;
+};
+
+export default Layout;

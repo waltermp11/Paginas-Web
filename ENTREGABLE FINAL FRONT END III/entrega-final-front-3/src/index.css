@@ -9,7 +9,7 @@
   --background-color: #9ed2ba;
   --button-color: #4a696c;
   --button-color-select: #6a9951;
-  --background-color-light:#B8E4DC;
+  --background-color-light: #b8e4dc;
   color: var(--colorLetter);
 }
 
@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #535bf2;
+  color: white;
 }
 
 body {
@@ -56,7 +56,7 @@ body {
   padding: 0rem 1rem;
   align-items: center;
 }
-.nav ul li{
+.nav ul li {
   font-size: 20px;
 }
 
@@ -76,29 +76,25 @@ button:hover {
   color: var(--colorLetter);
 }
 .contact {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
   color: var(--colorLetter);
   padding: 1rem 3rem;
   border-radius: 1rem;
-
 }
 
-.contact-info:hover{
-
+.contact-info:hover {
   background-color: var(--background-color-light);
 }
-.formulario{
-
+.formulario {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
@@ -112,29 +108,35 @@ button:hover {
   align-items: center;
   gap: 0.5rem;
 }
-.button-1,.button-2 {
+.button-1,
+.button-2 {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
-
 
 .button-form {
   padding: 0.8rem 4rem 1.2rem 4rem;
   border-radius: 1rem;
   font-size: 1rem;
   text-align: center;
-  border-style:double
+  border-style: double;
 }
 
-.card-validation-form-null{
-  background-color:#f7bfbe; 
+.card-validation-form-null {
+  background-color: #f7bfbe;
   color: red;
-  padding:0.8rem 1rem 1.2rem 2rem;
+  padding: 0.8rem 1rem 1.2rem 2rem;
   border-radius: 1rem;
 }
-.button-send{
 
+.card-confirmation-form-message {
+  background-color: var(--background-color);
+  color: green;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.button-send {
   background-color: var(--button-color);
   color: white;
   padding: 1rem 3rem;
@@ -143,7 +145,7 @@ button:hover {
   margin-top: 3rem;
 }
 
-.footer{
+.footer {
   margin-top: 5rem;
   background-color: var(--background-color);
   padding: 1.7rem;
@@ -151,12 +153,23 @@ button:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
-}
-.dh-png {
-  width: 300px
 }
 
+.footer-iconos-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  
+}
+.icons-footer {
+  width: 2rem;
+  height: 2rem;
+}
+
+.dh-png {
+  width: 300px;
+}
 
 .home {
   display: flex;
@@ -165,7 +178,6 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 .container-cards {
@@ -174,24 +186,71 @@ button:hover {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  width: 60%
+  width: 60%;
 }
-.card-grid {
+.card-container {
   width: 15rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
   margin: 1.4rem;
   border-color: var(--button-color);
   border-style: double;
-  align-items: center;
   
 }
+.card-container-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
 
-.doctor-image{
-
+.doctor-image {
   width: 200px;
   height: 200px;
 }
+.button-favorito {
+  color: white;
+  background-color: var (--button-color);
+}
 
+.favorito-icono {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.table-detail {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-detail th,
+.table-detail td {
+  padding: 1rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-detail th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.table-detail tr:last-child td {
+  border-bottom: none;
+}
+
+.table-detail tr:hover {
+  background-color: #41545b;
+}
+
+.table-detail tr:hover td {
+  color: white;
+}

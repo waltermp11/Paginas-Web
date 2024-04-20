@@ -5,16 +5,18 @@ export const themes = {
     //Aca nosotros creamos los colores  con lso atributos.
     color: "black",
     backgroundColor: "white",
-    backgroundColorButton: "blue",
+    fontColorButtonWhite: "black",
+    backgroundColorButton: "gray",
   },
   dark: {
     color: "white",
     backgroundColor: "black ",
-    backgroundColorButton: "green",
+    backgroundColorButton: "#646cff",
+    fontColorButtonWhite: "white"
   },
 };
 
 //creamos el contexto
 const ThemeContext = createContext(themes.light); //exige como parametro que le pasemos un estado inicial 1️⃣
 //Todos los componentes que esten en el ThemeContext, van hacer los que puedan acceder a la nube. ✅✅
-export default ThemeContext
+export default ThemeContext;

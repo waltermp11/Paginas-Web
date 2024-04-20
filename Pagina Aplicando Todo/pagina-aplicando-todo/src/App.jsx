@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Layout from "./Components/Layout";
 import NavBar from "./Components/NavBar";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Boddy from "./Components/Body";
 import ThemeContext, { themes } from "./context";
 import "./App.css";
@@ -14,7 +12,6 @@ function App() {
   const handlerChangeTheme = () => {
     theme === themes.dark ? setTheme(themes.light) : setTheme(themes.dark);
     //Esto es como un ternario mas largo, si si el estado esta en dark y es true, seteara theme a light ☀️ si es falso, de que mi theme sea light, pues mostrara e ingresara a dark 🌙
-    
   };
   return (
     <div className="App">

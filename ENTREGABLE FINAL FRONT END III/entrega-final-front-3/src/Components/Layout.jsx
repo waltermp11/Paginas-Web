@@ -11,10 +11,7 @@ const Layout = () => {
           <h1> DH Hospital</h1>
         </div>
 
-        <div></div>
         <nav className="nav">
-          
-
           <ul>
             <li>
               <Link to="/">Home 🏠</Link>
