@@ -1,9 +1,11 @@
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import { useContext } from "react";
+import { ContextGlobal } from "./utils/globalContext";
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
-const Layout = () => {
+const Layout = ({ funcionTema }) => {
+  const { action, state } = useContext(ContextGlobal);
   return (
     <>
       <header className="header">
@@ -23,7 +25,14 @@ const Layout = () => {
               <Link to="/favs">Favs ❤️</Link>
             </li>
           </ul>
-          <button>Change theme</button>
+          <button
+            onClick={() => {
+              action({ type: "CAMBIAR_TEMA" });
+              funcionTema(state.theme);
+            }}
+          >
+            Change Theme
+          </button>
         </nav>
       </header>
       <Outlet />

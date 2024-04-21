@@ -2,7 +2,7 @@ import { createContext, useReducer } from "react";
 
 function reducer(state, action) {
   //actualizar el estado segun la accion.
-  //la primera funcion, cuando nos digan que vamos a gregar a favoritos, lo que va a estar dentro de data, lo vamos agregar al localStorage. Cuando se diga que vamos a cambiar de tema sera de light a dark.(switch )
+  //la pruncion, cuando nos digan que vamos a gregar a favoritos, lo que va a estar dentro de data, lo vamos agregar al localStorage. Cuando se diga que vamos a cambiar de tema sera de light a dark.(switch )
   switch (action.type) {
     case "AGREGAR_FAVORITOS":
       //localStorage.setItem("doctorHighLights", state.data);
@@ -18,17 +18,17 @@ function reducer(state, action) {
       break;
 
     case "CAMBIAR_TEMA":
-      
-      break;
+      return { ...state, theme: state.theme === "light" ? "dark" : "light" };
+
     default:
-      console.log(state);
+      console.log(state.theme);
       break;
   }
   return state;
 }
 
 export const initialState = {
-  theme: "dark",
+  theme: "light",
   data: [],
 };
 

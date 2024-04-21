@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { ContextProvider } from "./Components/utils/globalContext.jsx";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ContextProvider>
     <App />

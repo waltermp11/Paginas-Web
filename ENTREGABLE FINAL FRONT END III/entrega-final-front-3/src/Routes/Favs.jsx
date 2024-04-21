@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Components/Card";
+
 import { useContext, useEffect } from "react";
 import { ContextGlobal } from "../Components/utils/globalContext";
 import doctorimg from "../assets/img/doctor.jpg";
