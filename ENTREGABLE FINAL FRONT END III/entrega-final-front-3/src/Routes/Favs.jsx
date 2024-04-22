@@ -17,6 +17,8 @@ const Favs = () => {
   return (
     <>
       <h1>Dentists Favs</h1>
+      <div className="favs">
+        <h2>Favs ❤️</h2>
       <div className="container-cards">
         {state.data.map((doctor, index) => (
           <div key={index} className="card-container">
@@ -27,6 +29,7 @@ const Favs = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </>
   );

@@ -15,13 +15,15 @@ const Footer = () => {
   
   useEffect(() => {
     setTheme(state.theme)
-    
+    console.log(state.theme);
   }, [state]);
+
+
   
   return (
     <footer className="footer">
       <h3>Powered by DH</h3>
-      <img src={tema = "light" ? DH : DH_WHITE } className="dh-png"/>
+      <img src={tema==="light" ? DH:DH_WHITE} className="dh-png"/>
       <div className="footer-iconos-redes">
         <img src={ico_facebook} className="icons-footer"/>
         <img src={ico_instagram} className="icons-footer"/>

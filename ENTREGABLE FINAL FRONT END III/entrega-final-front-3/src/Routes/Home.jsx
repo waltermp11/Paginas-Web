@@ -23,11 +23,11 @@ const Home = () => {
 
   return (
     <main className="home">
-      <h1>Home</h1>
+      <h2>Home</h2>
       <div className="container-cards">
         {dataApi.map((doctor, index) => (
           <div key={index} className="card-container">
-            <Link to={`/dentist/${doctor.id}`}>
+            <Link to={`/dentist/${doctor.id}`} className="a-card">
               <div className="card-container-img">
                 <img
                   src={doctorimg}
